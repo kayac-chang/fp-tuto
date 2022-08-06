@@ -1,11 +1,11 @@
 {
   "name": "@kayac/generate-password",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "kayac-chang <egg734631@gmail.com>",
   "description": "generate random secure password",
   "license": "MIT",
-  "exports": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "build:cjs": "esbuild src/index.ts --platform=node --format=cjs --outdir=dist",
