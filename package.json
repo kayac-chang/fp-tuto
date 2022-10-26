@@ -1,5 +1,5 @@
 {
-  "name": "@kayac/generate-password",
+  "name": "fp-tuto",
   "version": "0.1.1",
   "author": "kayac-chang <egg734631@gmail.com>",
   "description": "generate random secure password",
@@ -7,9 +7,7 @@
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "jest",
-    "build:cjs": "esbuild src/index.ts --platform=node --format=cjs --outdir=dist",
-    "build:type": "tsc --declaration --emitDeclarationOnly --outdir dist src/index.ts"
+    "test": "jest"
   },
   "devDependencies": {
     "@tsconfig/node18": "^1.0.1",

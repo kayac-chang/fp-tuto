@@ -1,3 +1,9 @@
 {
-  "extends": "@tsconfig/node18/tsconfig.json"
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@lib/*": ["./lib/*"]
+    }
+  }
 }
