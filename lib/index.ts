@@ -35,10 +35,11 @@ interface PredFn<T> {
  * that pass the test implemented by the provided function
  */
 export function filter<T>(pred: PredFn<T>) {
-  return function _filter(arr: T[]): T[] {
+  return function recursion(arr: T[]): T[] {
     if (length(arr) === 0) return [];
     const first = head(arr) as T;
-    return concat(pred(first) ? [first] : [], _filter(tail(arr)));
+    const item = pred(first) ? [first] : [];
+    return concat(item, recursion(tail(arr)));
   };
 }
 
